@@ -1,0 +1,68 @@
+/*Your styles*/
+
+body {
+    background-color: #232323;
+    overflow: hidden;
+}
+
+#content {
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.button_area {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_contents {
+    color: #FFFFFF;
+}
+
+.button_wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+    height: 15px;
+    margin-top: 3px;
+}
+
+span {
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.btn {
+    display: block;
+    border: 0 solid;
+    font-size: 100%;
+    color: white;
+    background-color: #171717;
+    padding: 3px;
+    width: 10vw;
+    margin-right: 5px;
+}
+
+.btn:hover {
+    background-color: #206080;
+}

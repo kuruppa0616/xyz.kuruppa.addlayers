@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="5.0" ExtensionBundleId="xyz.kuruppa.addlayers" ExtensionBundleVersion="1.0.0" ExtensionBundleName="Add Layers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ExtensionList>
+        <Extension Id="xyz.kuruppa.addlayers" Version="1.0" />
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <!-- Uncomment Host tags according to the apps you want your panel to support -->
+            <!-- Photoshop -->
+
+            <Host Name="AEFT" Version="[13.0,15.9]" />
+
+        </HostList>
+        <LocaleList>
+            <Locale Code="All" />
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="7.0" />
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="xyz.kuruppa.addlayers">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+                    <ScriptPath>./jsx/hostscript.jsx</ScriptPath>
+                    <CEFCommandLine>
+                        <Parameter>--enable-speech-input</Parameter>
+                        <Parameter>--enable-media-stream</Parameter>
+                        <Parameter>--enable-nodejs</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>Add Layers</Menu>
+                    <Geometry>
+                        <Size>
+                            <Height>300</Height>
+                            <Width>300</Width>
+                        </Size>
+                        <!--<MinSize>
+                            <Height>550</Height>
+                            <Width>400</Width>
+                        </MinSize>
+                        <MaxSize>
+                            <Height>550</Height>
+                            <Width>400</Width>
+                        </MaxSize>-->
+
+                    </Geometry>
+                    <Icons>
+                        <Icon Type="Normal">./icons/iconNormal.png</Icon>
+                        <Icon Type="RollOver">./icons/iconRollover.png</Icon>
+                        <Icon Type="Disabled">./icons/iconDisabled.png</Icon>
+                        <Icon Type="DarkNormal">./icons/iconDarkNormal.png</Icon>
+                        <Icon Type="DarkRollOver">./icons/iconDarkRollover.png</Icon>
+                    </Icons>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>
